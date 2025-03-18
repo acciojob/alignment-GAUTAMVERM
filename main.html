@@ -2,38 +2,63 @@
 <html>
 <head>
     <title>HTML Assignment 3</title>
+    <style>
+        table.middle {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1 align="center">HTML Assignment #3</h1>
     
     <!-- Table 1 -->
-    <table id="table-1" border="1" cellspacing="1" cellpadding="1" class="middle" width="50%" align="center">
+    <table id="table-1" class="middle">
         <tr>
             <td id="t11">left</td>
-            <td id="t12" align="center" class="center">center</td>
-            <td id="t13" align="right" class="right">right</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr>
             <td>left</td>
-            <td align="center" class="center">center</td>
-            <td align="right" class="right">right</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
         <tr>
             <td>left</td>
-            <td align="center" class="center">center</td>
-            <td align="right" class="right">right</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
     </table>
     <br>
     
     <!-- Table 2 -->
-     <table id="table-2" border="1"  cellpadding="1" class="middle" width="80% align="center">
+    <table id="table-2" class="middle">
         <tr>
-            <td id="t21" colspan="6"> </td>
+            <td id="t21" colspan="6"></td>
         </tr>
         <tr>
             <td></td>
-            <td colspan="4"></td>
+            <td colspan="2"></td>
             <td></td>
         </tr>
         <tr>
@@ -48,9 +73,9 @@
     <br>
     
     <!-- Table 3 -->
-    <table id="table-3" border="1" cellspacing="1" cellpadding="1" width="80%" align="center">
-        <tr>
-            <td colspan="3" bgcolor="green"></td>
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3"></td>
         </tr>
         <tr>
             <td></td>
@@ -59,8 +84,8 @@
             </td>
             <td></td>
         </tr>
-        <tr>
-            <td colspan="3" bgcolor="blue"></td>
+        <tr class="blue">
+            <td colspan="3"></td>
         </tr>
     </table>
 </body>
